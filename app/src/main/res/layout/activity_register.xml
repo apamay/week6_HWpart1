@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apamay.week6_hwpart1.registerActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat">
+
+        <TextView
+            android:id="@+id/tvwUName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/edtRegUName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvwUName"
+            android:layout_toRightOf="@+id/tvwUName"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tvwPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvwUName"
+            android:layout_below="@+id/tvwUName"
+            android:layout_marginTop="20dp"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/edtRegPwd"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvwPwd"
+            android:layout_toRightOf="@+id/tvwPwd"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tvwCFirmPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvwPwd"
+            android:layout_below="@+id/tvwPwd"
+            android:layout_marginTop="40dp"
+            android:text="Confirm Password" />
+
+        <EditText
+            android:id="@+id/edtRegCFirmPwd"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvwCFirmPwd"
+            android:layout_toRightOf="@+id/tvwCFirmPwd"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnRegist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/tvwCFirmPwd"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="20dp"
+            android:text="New User? Register here" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
